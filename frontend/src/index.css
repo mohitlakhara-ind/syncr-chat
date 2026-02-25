@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --violet-900: #0d0014;
+  --violet-800: #1a0028;
+  --violet-700: #2d0050;
+  --violet-accent: #7c3aed;
+  --violet-glow: #a855f7;
+  --glass-bg: rgba(109, 40, 217, 0.06);
+  --glass-border: rgba(167, 85, 247, 0.15);
+  --text-primary: #f0e8ff;
+  --text-secondary: #c4b5fd;
+  --text-muted: #7c6fa0;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(ellipse at 20% 50%, rgba(109, 40, 217, 0.25) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 60% 80%, rgba(124, 58, 237, 0.12) 0%, transparent 50%),
+              linear-gradient(135deg, #0d0014 0%, #1a0028 50%, #0a001f 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #a855f7);
+  border-radius: 99px;
+}
+
+/* ─── Glass card utility ─── */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.25rem;
+}
+
+/* ─── Glow button ─── */
+.btn-violet {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.4);
+}
+.btn-violet:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 32px rgba(168, 85, 247, 0.55);
+  background: linear-gradient(135deg, #8b5cf6, #c084fc);
+}
+
+/* ─── Input styling ─── */
+.chattr-input {
+  background: rgba(109, 40, 217, 0.08);
+  border: 1px solid rgba(167, 85, 247, 0.2);
+  color: #f0e8ff;
+  border-radius: 0.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.chattr-input:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
+  background: rgba(109, 40, 217, 0.12);
+}
+.chattr-input::placeholder { color: rgba(196, 181, 253, 0.45); }
+
+/* ─── Shake animation ─── */
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.2s both;
+}
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* ─── Online pulse ─── */
+@keyframes pulse-online {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(134, 239, 172, 0.6); }
+  50% { box-shadow: 0 0 0 5px rgba(134, 239, 172, 0); }
+}
+.online-dot { animation: pulse-online 2s infinite; }
+
+/* ─── Fade in ─── */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fade-in 0.3s ease forwards; }
