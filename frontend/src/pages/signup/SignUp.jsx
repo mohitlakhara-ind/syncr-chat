@@ -35,7 +35,7 @@ const SignUp = () => {
 						</svg>
 					</div>
 					<h1 className='text-3xl font-bold text-white tracking-tight'>
-						Join <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-300'>Chattr</span>
+						Join <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-300'>Syncr</span>
 					</h1>
 					<p className='text-sm text-purple-300/60 mt-1'>Create your account to get started</p>
 				</div>
@@ -46,7 +46,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							placeholder='John Doe'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={inputs.fullName}
 							onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
 						/>
@@ -57,7 +57,7 @@ const SignUp = () => {
 						<input
 							type='text'
 							placeholder='johndoe'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={inputs.username}
 							onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
 						/>
@@ -68,7 +68,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							placeholder='Enter password'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={inputs.password}
 							onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
 						/>
@@ -79,7 +79,7 @@ const SignUp = () => {
 						<input
 							type='password'
 							placeholder='Confirm password'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={inputs.confirmPassword}
 							onChange={(e) => setInputs({ ...inputs, confirmPassword: e.target.value })}
 						/>

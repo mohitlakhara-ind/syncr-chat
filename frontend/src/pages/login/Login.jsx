@@ -24,7 +24,7 @@ const Login = () => {
 						</svg>
 					</div>
 					<h1 className='text-3xl font-bold text-white tracking-tight'>
-						Welcome to <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-300'>Chattr</span>
+						Welcome to <span className='text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-purple-300'>Syncr</span>
 					</h1>
 					<p className='text-sm text-purple-300/60 mt-1'>Sign in to continue chatting</p>
 				</div>
@@ -35,7 +35,7 @@ const Login = () => {
 						<input
 							type='text'
 							placeholder='Enter your username'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
 						/>
@@ -46,7 +46,7 @@ const Login = () => {
 						<input
 							type='password'
 							placeholder='Enter your password'
-							className='chattr-input w-full h-11 px-4 text-sm'
+							className='Syncr-input w-full h-11 px-4 text-sm'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>

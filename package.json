@@ -1,5 +1,5 @@
 {
-	"name": "chattr",
+	"name": "Syncr",
 	"version": "1.0.0",
 	"description": "A real-time chat application built with the MERN stack and Socket.IO",
 	"main": "server.js",

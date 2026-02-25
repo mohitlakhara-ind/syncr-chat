@@ -12,7 +12,7 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "https://chattr-mern-api.onrender.com/api/$1"
+            "dest": "https://Syncr-mern-api.onrender.com/api/$1"
         },
         {
             "src": "/(.*)",
@@ -20,6 +20,6 @@
         }
     ],
     "env": {
-        "VITE_API_BASE_URL": "https://chattr-mern-api.onrender.com"
+        "VITE_API_BASE_URL": "https://Syncr-mern-api.onrender.com"
     }
 }

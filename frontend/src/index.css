@@ -65,20 +65,20 @@ body {
 }
 
 /* ─── Input styling ─── */
-.chattr-input {
+.Syncr-input {
   background: rgba(109, 40, 217, 0.08);
   border: 1px solid rgba(167, 85, 247, 0.2);
   color: #f0e8ff;
   border-radius: 0.75rem;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
-.chattr-input:focus {
+.Syncr-input:focus {
   outline: none;
   border-color: #a855f7;
   box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.15);
   background: rgba(109, 40, 217, 0.12);
 }
-.chattr-input::placeholder { color: rgba(196, 181, 253, 0.45); }
+.Syncr-input::placeholder { color: rgba(196, 181, 253, 0.45); }
 
 /* ─── Shake animation ─── */
 .shake {

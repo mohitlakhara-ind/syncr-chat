@@ -1,7 +1,7 @@
-# Render deployment config for Chattr backend
+# Render deployment config for Syncr backend
 services:
   - type: web
-    name: chattr-mern-api
+    name: Syncr-mern-api
     runtime: node
     region: singapore
     plan: free

@@ -1,4 +1,4 @@
-# Chattr 💬
+# Syncr 💬
 
 A real-time chat application built with the **MERN stack** and **Socket.IO**, featuring a sleek deep violet glassmorphism UI.
 
@@ -47,8 +47,8 @@ A real-time chat application built with the **MERN stack** and **Socket.IO**, fe
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/YOUR_USERNAME/chattr-mern.git
-cd chattr-mern
+git clone https://github.com/YOUR_USERNAME/Syncr-mern.git
+cd Syncr-mern
 
 # Install backend dependencies
 npm install
@@ -61,7 +61,7 @@ cd frontend && npm install && cd ..
 Create a `.env` file in the root directory:
 ```env
 PORT=5000
-MONGO_DB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/chattr
+MONGO_DB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/Syncr
 JWT_SECRET=your_super_secret_jwt_key_here
 NODE_ENV=development
 ```
@@ -80,7 +80,7 @@ App runs at `http://localhost:5173` (frontend) and `http://localhost:5000` (API)
 ## 📁 Project Structure
 
 ```
-chattr/
+Syncr/
 ├── backend/
 │   ├── controllers/    # Route handler logic
 │   ├── middleware/     # JWT auth middleware

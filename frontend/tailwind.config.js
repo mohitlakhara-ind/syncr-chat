@@ -12,7 +12,7 @@ export default {
           900: "#1a0028",
           800: "#2d0050",
         },
-        chattr: {
+        Syncr: {
           accent: "#7c3aed",
           glow: "#a855f7",
           soft: "#c4b5fd",
@@ -47,7 +47,7 @@ export default {
   daisyui: {
     themes: [
       {
-        chattr: {
+        Syncr: {
           primary: "#7c3aed",
           secondary: "#a855f7",
           accent: "#c084fc",
