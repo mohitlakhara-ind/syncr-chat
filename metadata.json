@@ -1,0 +1,14 @@
+{
+  "name": "syncr-chat",
+  "description": "A real-time chat app built with MERN stack and Socket.IO - violet glassmorphism UI",
+  "topics": [
+    "javascript",
+    "learning",
+    "optimized-portfolio"
+  ],
+  "homepage_url": "https://github.com/mohitlakhara-ind/syncr-chat",
+  "private": false,
+  "has_issues": true,
+  "has_projects": true,
+  "has_wiki": true
+}
